@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .social-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 15px;
+        }
+        .social-buttons a {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            color: rgb(5, 83, 152);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .social-buttons a:hover {
+            background-color: rgb(3, 60, 110);
+            color: white;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 10px;
+            background-color: rgb(5, 83, 152);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: rgb(3, 60, 110);
+        }
+        .anchor-buttons {
+            display: flex;
+            justify-content: center; /* Centers the buttons horizontally */
+            gap: 10px; /* Reduces space between the buttons */
+            margin: 10px 0; /* Adds spacing above and below the buttons */
+        }
+        .anchor-buttons a {
+            padding: 10px 20px; /* Makes the buttons smaller */
+            background-color: rgb(5, 83, 152);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px; /* Reduces font size */
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        }
+        .anchor-buttons a:hover {
+            background-color: rgb(3, 60, 110);
+            color: white;
+        }
+        /* Center only the h1 (Resume) */
+        h1 {
+            text-align: center;
+            margin: 0 auto; /* Ensures centering in case of parent container issues */
+            display: block; /* Ensures it behaves as a block element */
+        }
+    </style>
+</head>
+<body>
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/jaynwillis/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/jayn.willis.9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <!-- Centered Heading -->
+    <h1 style="text-align: center;">Resume</h1>
+
+    <!-- Anchor Buttons -->
+    <div class="anchor-buttons">
+        <a href="#education-section">Go to Education</a>
+        <a href="#experience-section">Go to Experience</a>
+        <a href="#skills-section">Go to Skills</a>
+    </div>
+
+    <h2 id="education-section">Education</h2>
+    <p>
+        <strong>Brigham Young University – Provo, UT</strong><br>
+        Bachelor of Science in Business (Pre-Business)<br>
+        Expected Graduation: 2028 <br>
+
+        <strong>Summit High School – Bend, OR</strong><br>
+        High School Diploma<br>
+        Graduated: 2024
+    </p>
+
+    <!-- Experience Section -->
+    <div id="experience-section">
+        <h2>Experience</h2>
+        <p>
+            <strong>Ellys Ice Cream Shop – Bend, OR</strong><br>
+            2022 – 2024
+        </p>
+        <ul>
+            <li>Managed daily store operations, ensuring a high-quality customer experience and smooth workflow</li>
+            <li>Led and trained a team of 15 employees, handling schedules, performance reviews, and onboarding</li>
+            <li>Oversaw inventory management, ordering supplies, and working with vendors</li>
+            <li>Increased customer satisfaction through staff training and effective store organization</li>
+            <li>Handled cash management, opening/closing procedures, and financial reporting</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills-section">
+        <h2>Skills</h2>
+        <ol>
+            <li>
+                Leadership & Team Management
+                <ul>
+                    <li>Proven ability to lead, motivate, and manage teams effectively in diverse environments</li>
+                </ul>
+            </li>
+            <li>
+                Customer Service & Communication
+                <ul>
+                    <li>Exceptional communication skills with experience in maintaining positive customer relations</li>
+                </ul>
+            </li>
+            <li>
+                Excel & Statistical Analysis
+                <ul>
+                    <li>Proficient in Excel, including data analysis, statistical modeling, and prediction techniques for forecasting and decision-making</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
